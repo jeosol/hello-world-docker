@@ -10,11 +10,11 @@ COPY hello-world /root/quicklisp/local-projects/
 # copy the scripts 
 COPY create-hello-world-core.lisp .
 COPY create-hello-world-core.sh .
-COPY start-hello-world.sh .
+COPY start-hello-world-repl.sh .
 
 # make the scripts executable
 RUN chmod +x ./create-hello-world-core.sh
-RUN chmod +x ./start-hello-world.sh
+RUN chmod +x ./start-hello-world-repl.sh
 
 # run script to create hello-world.core file
 RUN ./create-hello-world-core.sh
