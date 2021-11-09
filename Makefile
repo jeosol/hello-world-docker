@@ -1,7 +1,7 @@
 clone:
 	git clone https://github.com/jeosol/hello-world.git hello-world
 
-docker: clone
+docker:
 	@echo "Building hello-world docker image ..."
 	docker image build -t hello-world -f Dockerfile . 
 	@echo "Built hello-world image ..."
