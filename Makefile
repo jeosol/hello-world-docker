@@ -1,5 +1,7 @@
 clone:
+	@echo "Cloning the hello-world repository ..."
 	git clone https://github.com/jeosol/hello-world.git hello-world
+	@echo "Finished cloning hello-world repository ..."
 
 docker:
 	@echo "Building hello-world docker image ..."
