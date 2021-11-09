@@ -20,5 +20,5 @@ RUN chmod +x ./start-hello-world.sh
 RUN ./create-hello-world-core.sh
 
 # set the startup script when we run the container
-ENTRYPOINT ["./start-hello-world.sh"]
+ENTRYPOINT ["./start-hello-world-repl.sh"]
 
