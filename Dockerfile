@@ -2,7 +2,10 @@
 FROM tdba/simapi:sbcl_2.1.9 as base-image
 
 # clone the repository
-RUN git clone https://github.com/jeosol/hello-world.git /root/quicklisp/local-projects/hello-world
+# RUN git clone https://github.com/jeosol/hello-world.git /root/quicklisp/local-projects/hello-world
+
+# COPY the repository
+COPY hello-world /root/quicklisp/local-projects/
 
 # copy the scripts 
 COPY create-hello-world-core.lisp .
