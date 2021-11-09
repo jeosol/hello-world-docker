@@ -12,7 +12,7 @@ docker-repl:
 
 docker-exe:
 	@echo "Building hello-world (exe version) docker image ..."
-	docker image build -t hello-world-exe -f Dockerfile-exe
+	docker image build -t hello-world-exe -f Dockerfile-exe .
 	@echo "Built hello-world-exe image ..."
 
 # Buid the images without caching
