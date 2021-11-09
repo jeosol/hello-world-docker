@@ -1,0 +1,17 @@
+# set the base image
+FROM tdba/simapi:sbcl_2.1.9 as base-image
+
+# clone the repository
+# RUN git clone https://github.com/jeosol/hello-world.git /root/quicklisp/local-projects/hello-world
+
+# COPY the repository
+COPY hello-world /root/quicklisp/local-projects/
+
+WORKDIR /root/quicklisp/local-projects/hello-world/
+
+# create the exe hello-world in the ./bin/ folder
+RUN make build
+
+# set the startup script when we run the container
+ENTRYPOINT ["./bin/hello-world"]
+
