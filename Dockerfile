@@ -22,5 +22,3 @@ RUN ./create-hello-world-core.sh
 # set the startup script when we run the container
 ENTRYPOINT ["./start-hello-world.sh"]
 
-# CMD ["sbcl", "--noinform", "--core hello-world.core", "--eval \"(in-package :hello-world)\""]
-
