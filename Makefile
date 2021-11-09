@@ -29,7 +29,7 @@ docker-exe-nocache:
 # Run the docker containers
 run-docker-repl:
 	@echo "Running the hello-world container ..."
-	docker run --rm --name hello-world-repl -it hello-world:latest
+	docker run --rm --name hello-world-repl -it hello-world-repl:latest
 
 run-docker-exe:
 	@echo "Running the hello-world-exe container ..."
