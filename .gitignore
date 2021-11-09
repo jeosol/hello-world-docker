@@ -1,4 +1,4 @@
-bin/
+hello-world/
 *.abcl
 *.fasl
 *.dx32fsl
