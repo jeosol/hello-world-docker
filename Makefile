@@ -35,6 +35,10 @@ run-hello-world-exe-container:
 	@echo "Running the hello-world-exe container ..."
 	docker run --rm --name hello-world-exe -it hello-world-exe:latest
 
+# docker exec into the hello-world-repl container
+run-hello-world-repl-exec:
+	docker exec -it hello-world-repl bash
+
 # List hello-world* images
 list-images:
 	docker images | grep hello-world
