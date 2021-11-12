@@ -1,8 +1,5 @@
 # set the base image
-FROM tdba/simapi:sbcl_2.1.9 as base-image
-
-# clone the repository
-# RUN git clone https://github.com/jeosol/hello-world.git /root/quicklisp/local-projects/hello-world
+FROM tdba/simapi:sbcl_2.1.10 as base-image
 
 # COPY the source code
 COPY hello-world /root/quicklisp/local-projects/hello-world

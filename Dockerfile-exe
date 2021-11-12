@@ -1,24 +1,19 @@
 # set the base image
-FROM tdba/simapi:sbcl_2.1.9 as base-image
-
-# clone the repository
-# RUN git clone https://github.com/jeosol/hello-world.git /root/quicklisp/local-projects/hello-world
+FROM tdba/simapi:sbcl_2.1.10 as base-image
 
 # copy the source code: need to specify the destination directory explicitly
 COPY hello-world /root/quicklisp/local-projects/hello-world
 
-WORKDIR /root/quicklisp/local-projects/hello-world/
+COPY create-hello-world-exe.lisp /root/quicklisp/local-projects/hello-world/create-hello-world-exe.lisp
+COPY create-hello-world-exe.sh /root/quicklisp/local-projects/hello-world/create-hello-world-exe.sh
 
-COPY create-hello-world-exe.lisp .
-COPY create-hello-world-exe.sh .
+WORKDIR /root/quicklisp/local-projects/hello-world/
 
 RUN chmod +x ./create-hello-world-exe.sh
 
 # create the exe hello-world in the ./bin/ folder
 RUN ./create-hello-world-exe.sh
 
-WORKDIR /root/quicklisp/local-projects/hello-world
-
 # set the startup script when we run the container
-ENTRYPOINT ["./start-hello-world-exe.sh"]
+ENTRYPOINT ["./bin/hello-world"]
 
