@@ -23,7 +23,7 @@ hello-world-repl-image-nocache:
 
 hello-world-exe-image-nocache:
 	@echo "Building hello-world-exe docker image ..."
-	docker image build --no-cache -t hello-world-exe -f Dockerfile . 
+	docker image build --no-cache -t hello-world-exe -f Dockerfile-exe . 
 	@echo "Built hello-world-exe image ..."
 
 # Run the docker containers
