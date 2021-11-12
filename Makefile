@@ -26,14 +26,15 @@ hello-world-exe-image-nocache:
 	docker image build --no-cache -t hello-world-exe -f Dockerfile-exe . 
 	@echo "Built hello-world-exe image ..."
 
-# Run the docker containers
+# Run the hello-world-repl container
 run-hello-world-repl-container:
 	@echo "Running the hello-world container ..."
 	docker run --rm --name hello-world-repl -it hello-world-repl:latest
 
+# Run the hello-world-exe container. NAME argument is passed to the executable if present
 run-hello-world-exe-container:
 	@echo "Running the hello-world-exe container ..."
-	docker run --rm --name hello-world-exe -it hello-world-exe:latest
+	docker run --rm --name hello-world-exe -it hello-world-exe:latest ${NAME}
 
 # docker exec into the hello-world-repl container
 run-hello-world-repl-exec:
