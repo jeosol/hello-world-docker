@@ -65,6 +65,13 @@ In the above make command, the variable NAME contains the argument that is passe
 Please see the included Dockerfile-exe, Makefile and associated lisp and bash scripts for this setup. 
 
 ## Installation
+To install the repository, issue the following command:
+```
+git clone https://github.com/jeosol/hello-world-docker.git
+```
+Then change to the **hello-world-docker** directory and issue one or both make commands above to build the repl- or executable-based images (see previous section). Please ensure that you have docker install and running for this to work correctly.
+
+If there are any issues or problems, please file an issue.
 
 ## Author
 
