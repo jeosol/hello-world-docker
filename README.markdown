@@ -25,9 +25,29 @@ In the first image, we build the container to load the hello-world project and
 drop us in a repl with the package initialized such that we can run the
 **greet-user** function. In the second case, we setup up the image so when the container is run, it presents the greeting to standard output and then exits.
 
-##
-Running Docker Container
+It should be noted that I used a custom SBCL container as the base image (see Dockerfile for detail). This base SBCL image is based on debian bullseye and uses SBCL version 2.1.10 and quicklisp version 2021-10-21. There are other SBCL images (e.g., see fukamachi/sbcl and clfoundation/sbcl) that support multiple linux distros type and versions (e.g., debian, alpine, ubuntu) and SBCL versions. The interested user can also use these base images in the docker files or when targetting other distros (other than debian) and/or SBCL versions.
 
+## Running Docker Container
+The repository contains a Makefile that contains the required targets to create the two images mentioned above and to run the containers.
+
+After cloning the **hello-world-docker** repository, change to the directory hello-world-docker and issue the command:
+```
+make clone
+```
+This will clone the **hello-world** repository in the current directory. This folder contains the source codes for which we want to build the images for. (Note the .gitignore file is set to ignore the hello-world folder)
+
+After cloning setup above, you can build one of the two images mentioned above.
+
+### Build repl-based image:
+To build a repl-based image, i.e., we drop into a repl when the container is run, issue the following command:
+```
+make hello-world-repl-image
+```
+To run this container, issue the following command
+```
+make hello-world-repl-container
+```
+and the user is dropped into a repl. 
 ## Installation
 
 ## Author
