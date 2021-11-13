@@ -3,8 +3,10 @@ This repository was developed for educational purposes as part of my **hello-wor
 
 In this repository, called **hello-world-docker**, we show how to build docker images and run containers for the [hello-world](https://github.com/jeosol/hello-world) project.
 
+Docker containers are important because they provide a portable mechanism for deploying applications. Please see [docker](https://docs.docker.com/engine/reference/builder/) for more details.
+
 ## Introduction
-This is a simple example of how to build a docker image and container for a simple common lisp project. We will be using the simple [hello-world](https://github.com/jeosol/hello-world) project to illustrate this. This project contains a single function:
+This example project shows how to build and run docker containers. We will be using the simple [hello-world](https://github.com/jeosol/hello-world) project to illustrate this. This project contains a single function:
 ```
 (greet-user &optional (name "john") ...)
 ```
