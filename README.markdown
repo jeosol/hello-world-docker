@@ -1,7 +1,7 @@
 # Hello-World-Docker
 This repository was developed for educational purposes as part of my **hello-world** series of repos to show the use of different software technologies in Common Lisp projects.
 
-In this repository, called called **hello-world-docker**, we show how to build docker images and run containers for the [hello-world](https://github.com/jeosol/hello-world) project described earlier.
+In this repository, called **hello-world-docker**, we show how to build docker images and run containers for the [hello-world](https://github.com/jeosol/hello-world) project described earlier.
 
 ## Introduction
 This is a simple example of how to build a docker image and container for a simple common lisp project. We will be using the simple [hello-world](https://github.com/jeosol/hello-world) project to illustrate this. This project contains a single function:
