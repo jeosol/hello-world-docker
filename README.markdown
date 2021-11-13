@@ -1,5 +1,5 @@
 # Hello-World-Docker
-This repository was constructed for educational purposes as part of my **hello-world** series of repos that illustrate different software technologies.
+This repository was developed for educational purposes as part of my **hello-world** series of repos to show the use of different software technologies in Common Lisp projects.
 
 In this repository, called called **hello-world-docker**, we show how to build docker images and run containers for the [hello-world](https://github.com/jeosol/hello-world) project described earlier.
 
