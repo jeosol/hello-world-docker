@@ -45,9 +45,24 @@ make hello-world-repl-image
 ```
 To run this container, issue the following command
 ```
-make hello-world-repl-container
+make run-hello-world-repl-container
 ```
-and the user is dropped into a repl. The *greet-user* is defined in the hello-world/src/hello-world package. Type ***package*** in the repl to confirm that the current package is hello-world/src/hello-world.
+and the user is dropped into a repl. The *greet-user* is defined in the hello-world/src/hello-world package. Type **\*package\*** in the repl to confirm that the current package is hello-world/src/hello-world. We can then run call the function (greet-user <name>).
+
+Please see the included Dockerfile, Makefile, and associated lisp and bash script files for this particular setup.
+
+### Build executable image:
+Here, we create an exectuable and setup the image to run the executable as the final command in the docker file (see Dockerfile-exe in the repository). To build the image, issue the following command:
+```
+make hello-world-exe-image
+```
+To run this container, issue the following command:
+```
+make run-hello-world-exe-container NAME=mary
+```
+In the above make command, the variable NAME contains the argument that is passed to the executable in the container. This is equivalent to calling (greet-user "mary"). Additionally, the container runs, prints "Hello Mary!" and then exits. Note there, we do not enter a repl as described earlier.
+
+Please see the included Dockerfile-exe, Makefile and associated lisp and bash scripts for this setup. 
 
 ## Installation
 
