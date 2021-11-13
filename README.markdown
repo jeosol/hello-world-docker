@@ -47,7 +47,8 @@ To run this container, issue the following command
 ```
 make hello-world-repl-container
 ```
-and the user is dropped into a repl. 
+and the user is dropped into a repl. The *greet-user* is defined in the hello-world/src/hello-world package. Type ***package*** in the repl to confirm that the current package is hello-world/src/hello-world.
+
 ## Installation
 
 ## Author
