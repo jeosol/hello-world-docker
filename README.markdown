@@ -12,10 +12,12 @@ This example project shows how to build and run docker containers. We will be us
 ```
 The function can be called with or without argument and the output for each case is shown below:
 ```
-(greet-user) => $Hello John!
+(greet-user)
+Hello John!
 ```
 ```
-(greet-user "mary") => Hello Mary!
+(greet-user "mary")
+Hello Mary!
 ```
 Please note that the **hello-world** project does not do much and this is intentional. The focus is on building docker images for CL projects and the methods
 are largely independent on the project.
