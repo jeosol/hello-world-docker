@@ -79,7 +79,7 @@ git clone https://github.com/jeosol/hello-world-docker.git
 ```
 Then change to the **hello-world-docker** directory and issue one or both make commands described above to build the repl- or executable-based images (see previous section). Please ensure that you have docker installed and running on your local machine.
 
-If there are any issues or problems, please file an issue.
+Please file an issue if you encounter problems creating the docker images.
 
 ## Author
 
