@@ -23,7 +23,7 @@ Please note that the **hello-world** project does not do much and this is intent
 
 ## Build Docker Image
 
-Build a docker image requires a base image on which we write further instructions using specifications in a file called **Dockerfile**. From this base image, we can install required libraries, copy our source code and perform any other required operations, e.g., source compilations to generate an executable. Finally, we save the updated image with a new name and this image can be run as a docker container later on. Please see [docker](https://docs.docker.com/engine/reference/builder/) for more details. 
+Build a docker image requires a base image on which we write further instructions using specifications in a file called **Dockerfile**. From this base image, we can install required libraries, copy our source code repositories and perform any other required operations, e.g., source compilations to generate an executable. Finally, we save the updated image with a new name and this image can be run as a container later. Please see [docker](https://docs.docker.com/engine/reference/builder/) for more details. 
 
 We are going to build two docker images for the **hello-world** project. The two images illustrate one of many ways to use docker containers.
 
