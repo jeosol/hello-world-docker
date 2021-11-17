@@ -19,8 +19,7 @@ Hello John!
 (greet-user "mary")
 Hello Mary!
 ```
-Please note that the **hello-world** project does not do much and this is intentional. The focus is on building docker images for CL projects and the methods
-are largely independent on the project.
+Please note that the **hello-world** project does not do much and this is intentional. The focus is on building docker images for CL projects and the methods for building the images and running the containers are largely independent on the project.
 
 ## Build Docker Image
 
