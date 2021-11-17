@@ -77,7 +77,7 @@ To clone the repository to your local machine, issue the following command in a 
 ```
 git clone https://github.com/jeosol/hello-world-docker.git
 ```
-Then change to the **hello-world-docker** directory and issue one or both make commands described above to build the repl- or executable-based images (see previous section). Please ensure that you have docker installed and running on your local machine.
+Then change to the **hello-world-docker** directory and issue one or both make commands described above to build the repl- or executable-based images (see previous section). Please ensure that you have Docker installed and running on your local machine before executing the **make** commands.
 
 Please file an issue if you encounter problems creating the docker images.
 
