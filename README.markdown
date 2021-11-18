@@ -50,7 +50,7 @@ To build a repl-based image, i.e., we drop into a repl when the container is run
 ```
 make hello-world-repl-image
 ```
-To run this container, issue the following command
+To run this container, type the following command at the console:
 ```
 make run-hello-world-repl-container
 ```
@@ -59,11 +59,11 @@ and the user is dropped into a repl. The *greet-user* is defined in the hello-wo
 Please see the included **Dockerfile**, Makefile, and associated lisp and bash script files for this particular setup.
 
 ### Build executable image:
-Here, we create an exectuable and setup the image to run the executable as the final command in the docker file (see Dockerfile-exe in the repository). To build the image, issue the following command:
+Here, we create an exectuable and setup the image to run the executable as the final command in the docker file (see Dockerfile-exe in the repository). To build the image, type the following command at the console:
 ```
 make hello-world-exe-image
 ```
-To run this container, issue the following command:
+To run this container, type the following command:
 ```
 make run-hello-world-exe-container NAME=mary
 ```
@@ -72,7 +72,7 @@ In the above make command, the variable NAME contains the argument that is passe
 Please see the included **Dockerfile-exe**, Makefile and associated lisp and bash scripts for this setup. 
 
 ## Installation
-To clone the repository to your local machine, issue the following command in a shell:
+To clone the repository to your local machine, enter the following command in a shell:
 ```
 git clone https://github.com/jeosol/hello-world-docker.git
 ```
