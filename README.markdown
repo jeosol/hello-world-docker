@@ -24,7 +24,7 @@ Here the function is called with no argument - the default name "john" is used.
 Hello John!
 ```
 
-Please note that the **hello-world** project does not do much and this is intentional. The focus is to show how to build Docker images for CL projects. The methods building images and running containers are largely independent of the project.
+Please note that the **hello-world** project does not do much and this is intentional. The focus is to show how to build Docker images for CL projects. The methods for building images and running containers are largely independent of the project.
 
 ## Build Docker Image
 
