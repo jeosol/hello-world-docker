@@ -6,7 +6,7 @@ In this repository, called **hello-world-docker**, we show how to build Docker i
 Docker containers are important because they provide a portable mechanism for deploying applications. Please see [docker](https://docs.docker.com/engine/reference/builder/) for more details.
 
 ## Introduction
-This example project shows how to build and run docker containers. We will be using the simple [hello-world](https://github.com/jeosol/hello-world) project to illustrate this. This project contains a single function that takes an optional argument **name** that defaults to "john":
+This example project shows how to build and run docker containers. We will be using the simple [hello-world](https://github.com/jeosol/hello-world) project to illustrate this. This project contains a single function that takes an optional argument **name** that defaults to the string "john":
 ```
 (greet-user &optional (name "john") ...)
 ```
