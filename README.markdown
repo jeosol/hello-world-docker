@@ -28,13 +28,13 @@ Please note that the **hello-world** project does not do much and this is intent
 
 ## Build Docker Image
 
-Building a docker image starts from a base image on which we write further instructions specified in a file called **Dockerfile**. From this base image, we can install required libraries, copy our source code repositories and perform any other required operations, e.g., compile source code to create artifacts, e.g., binary/executable. Finally, we save the updated image with a new name and this image can be run as a container later. Please see [Docker](https://docs.docker.com/engine/reference/builder/) website for more details. 
+Building a docker image starts from a base image on which we write further instructions specified in a file called **Dockerfile**. From this base image, we can install required libraries, copy our source code and perform any other required operations, e.g., compile source code to create artifacts, e.g., a binary/executable file. Finally, we save the updated image by tagging it with a new name and version. The new image is then run as a container later. Please see [Docker](https://docs.docker.com/engine/reference/builder/) website for more details. 
 
-We are going to build two docker images for the **hello-world** project. The two images illustrate one of many ways to build and run docker containers. 
+We are going to build two docker images for the **hello-world** project. The two images illustrate one of many ways to build and run docker containers for CL projects.
 
 In the first image, we build the container to load the hello-world project and
-drop us in a repl with the package initialized such that we can run the
-**greet-user** function. In the second case, we setup up the image so when the container is run, it presents the greeting to standard output and then exits.
+drop us into a REPL (READ-EVAL-PRINT-LOOP) with the **\*package\*** initialized such that we can just type
+**greet-user** function without the package name. In the second case, we setup up the image so when the container is run, it presents the greeting to standard output and then exits.
 
 ### Base SBCL image
 It should be noted that I used a custom SBCL container as the base image (see Dockerfile for detail). This base SBCL image is based on debian bullseye and uses SBCL version 2.1.10 and quicklisp version 2021-10-21. There are other SBCL images (e.g., see [fukamachi/sbcl](https://hub.docker.com/r/fukamachi/sbcl) and [clfoundation/sbcl](https://hub.docker.com/r/clfoundation/sbcl) that support multiple linux distros type and versions (e.g., debian, alpine, ubuntu) and SBCL versions. The interested user can also use these base images in the docker files or when targetting other distros (other than debian) and/or SBCL versions.
