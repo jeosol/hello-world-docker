@@ -12,13 +12,13 @@ This example project shows how to build and run docker containers. We will be us
 ```
 The function can be called with or without an argument. These cases are shown next:
 ### with arguments
-Here the function argument is "mary".
+Here the function is called with argument set as "mary".
 ```
 (greet-user "mary")
 Hello Mary!
 ```
 ### without arguments:
-Here the function is called with no argument, and the default "john" is used.
+Here the function is called with no argument - the default name "john" is used.
 ```
 (greet-user)
 Hello John!
