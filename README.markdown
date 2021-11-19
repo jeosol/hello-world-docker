@@ -34,7 +34,7 @@ We are going to build two docker images for the **hello-world** project. The two
 
 In the first image, we build the container to load the hello-world project and
 drop us into a REPL (READ-EVAL-PRINT-LOOP) with the **\*package\*** initialized such that we can just type
-**greet-user** function without the package name. In the second case, we setup up the image so when the container is run, it presents the greeting to standard output and then exits.
+**greet-user** function into the REPL without the package name. In the second case, we setup up the image so when the container is run, it presents the greeting to standard output and then exits.
 
 ### Base SBCL image
 It should be noted that I used a custom SBCL container as the base image (see Dockerfile for detail). This base SBCL image is based on debian bullseye and uses SBCL version 2.1.10 and quicklisp version 2021-10-21. There are other SBCL images (e.g., see [fukamachi/sbcl](https://hub.docker.com/r/fukamachi/sbcl) and [clfoundation/sbcl](https://hub.docker.com/r/clfoundation/sbcl) that support multiple linux distros type and versions (e.g., debian, alpine, ubuntu) and SBCL versions. The interested user can also use these base images in the docker files or when targetting other distros (other than debian) and/or SBCL versions.
