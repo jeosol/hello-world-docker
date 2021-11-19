@@ -10,15 +10,20 @@ This example project shows how to build and run docker containers. We will be us
 ```
 (greet-user &optional (name "john") ...)
 ```
-The function can be called with or without argument and the output for each case is shown below:
-```
-(greet-user)
-Hello John!
-```
+The function can be called with or without an argument. These cases are shown next:
+### with arguments
+Here the function argument is "mary".
 ```
 (greet-user "mary")
 Hello Mary!
 ```
+### without arguments:
+Here the function is called with no argument, and the default "john" is used.
+```
+(greet-user)
+Hello John!
+```
+
 Please note that the **hello-world** project does not do much and this is intentional. The focus is on building docker images for CL projects and the methods for building the images and running the containers are largely independent of the project.
 
 ## Build Docker Image
