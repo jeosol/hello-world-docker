@@ -36,10 +36,12 @@ In the first image, we build the container to load the hello-world project and
 drop us into a REPL (READ-EVAL-PRINT-LOOP) with the **\*package\*** initialized such that we can just type
 **greet-user** function into the REPL without the package name. In the second case, we set up the image so then when the container is run, the hello-world executable is called with the specified name and the result (i.e., greeting) is printed to the standard output and then the application exits.
 
-In the next section, we will describe the base image used for building the docker images, and other base images that can be used.
+In the next section, we will describe the base docker image used for building the docker images, and other base images that can be used.
 
-### Base SBCL image
-It should be noted that I used a custom SBCL container as the base image (see Dockerfile for detail). This base SBCL image is based on debian bullseye and uses SBCL version 2.1.10 and quicklisp version 2021-10-21. There are other SBCL images (e.g., see [fukamachi/sbcl](https://hub.docker.com/r/fukamachi/sbcl) and [clfoundation/sbcl](https://hub.docker.com/r/clfoundation/sbcl) that support multiple linux distros type and versions (e.g., debian, alpine, ubuntu) and SBCL versions. The interested user can also use these base images in the docker files or when targetting other distros (other than debian) and/or SBCL versions.
+### Base SBCL Docker Image
+It should be noted that I used a custom SBCL image as the base image (please see **FROM** statement in the Dockerfile for detail). This base SBCL image is based on debian bullseye and uses SBCL version 2.1.10 and quicklisp version 2021-10-21.
+
+There are other SBCL images (for example, see [fukamachi/sbcl](https://hub.docker.com/r/fukamachi/sbcl) and [clfoundation/sbcl](https://hub.docker.com/r/clfoundation/sbcl) that support multiple linux distros (e.g., debian, alpine, ubuntu) and SBCL versions (2.1.10, 2.1.9, ...). The interested user can also use these base SBCL images in the Dockerfiles for different combination of distros and/or SBCL versions.
 
 ## Running Docker Container
 The repository contains a Makefile that contains the required targets to create the two images mentioned above and to run the containers.
