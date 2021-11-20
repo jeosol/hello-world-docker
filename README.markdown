@@ -50,7 +50,7 @@ After cloning the **hello-world-docker** repository, change to the hello-world-d
 ```
 make clone
 ```
-The above command clone the **hello-world** repository in the current directory. We want to build Docker images for the hello-world project. (Note that we set the .gitignore file ignore the hello-world folder)
+The above command will clone the **hello-world** repository into the current directory. We want to build Docker images for the hello-world project. (Note that we set the .gitignore file ignore the hello-world folder)
 
 After the cloning steup above, we can proceed to build the two images as described below.
 
