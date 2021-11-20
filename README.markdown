@@ -46,13 +46,13 @@ There are other SBCL images (for example, see [fukamachi/sbcl](https://hub.docke
 ## Running Docker Container
 The hello-world-docker repository includes a Makefile with all the required targets to create the two images described earlier and additional commands to run the Docker containers.
 
-After cloning the **hello-world-docker** repository, change to the directory hello-world-docker and issue the command:
+After cloning the **hello-world-docker** repository, change to the hello-world-docker directory and issue the following command:
 ```
 make clone
 ```
-This will clone the **hello-world** repository in the current directory. This folder contains the source codes for which we want to build the images for. (Note the .gitignore file is set to ignore the hello-world folder)
+The above command clone the **hello-world** repository in the current directory. We want to build Docker images for the hello-world project. (Note that we set the .gitignore file ignore the hello-world folder)
 
-After cloning setup above, you can build one of the two images mentioned above.
+After the cloning steup above, we can proceed to build the two images as described below.
 
 ### Build repl-based image:
 To build a repl-based image, i.e., we drop into a repl when the container is run, issue the following command:
