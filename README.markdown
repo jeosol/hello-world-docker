@@ -52,10 +52,10 @@ make clone
 ```
 The above command will clone the **hello-world** repository into the current directory. We want to build Docker images for the hello-world project. (Note that we set the .gitignore file ignore the hello-world folder)
 
-After the cloning steup above, we can proceed to build the two images as described below.
+After the cloning step above, we can proceed to build the two Docker images as described below.
 
-### Build repl-based image:
-To build a repl-based image, i.e., we drop into a repl when the container is run, issue the following command:
+### Build REPL-based image:
+To build a REPL-based image, i.e., we drop into a repl when the container is run, issue the following command:
 ```
 make hello-world-repl-image
 ```
@@ -63,9 +63,9 @@ To run this container, type the following command at the console:
 ```
 make run-hello-world-repl-container
 ```
-and the user is dropped into a repl. The *greet-user* is defined in the hello-world/src/hello-world package. Type **\*package\*** in the repl to confirm that the current package is hello-world/src/hello-world. We can then run call the function (greet-user <name>).
+The container starts and the user is dropped into a REPL. The *greet-user* function is defined in the hello-world/src/hello-world package. Type **\*package\*** in the REPL to confirm that the current package is hello-world/src/hello-world. We can then run call the function (greet-user <name>), where <name> is the string argument to the function.
 
-Please see the included **Dockerfile**, Makefile, and associated lisp and bash script files for this particular setup.
+Please see the included **Dockerfile**, Makefile, and associated lisp and bash script files for details on how to bild the REPL-based image.
 
 ### Build executable image:
 Here, we create an exectuable and setup the image to run the executable as the final command in the docker file (see Dockerfile-exe in the repository). To build the image, type the following command at the console:
