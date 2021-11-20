@@ -44,7 +44,7 @@ It should be noted that I used a custom SBCL image as the base image (please see
 There are other SBCL images (for example, see [fukamachi/sbcl](https://hub.docker.com/r/fukamachi/sbcl) and [clfoundation/sbcl](https://hub.docker.com/r/clfoundation/sbcl) that support multiple linux distros (e.g., debian, alpine, ubuntu) and SBCL versions (2.1.10, 2.1.9, ...). The interested user can also use these base SBCL images in the Dockerfiles for different combination of distros and/or SBCL versions.
 
 ## Running Docker Container
-The repository contains a Makefile that contains the required targets to create the two images mentioned above and to run the containers.
+The hello-world-docker repository includes a Makefile with all the required targets to create the two images described earlier and additional commands to run the Docker containers.
 
 After cloning the **hello-world-docker** repository, change to the directory hello-world-docker and issue the command:
 ```
