@@ -63,7 +63,7 @@ To run the container, type the following command at the console:
 ```
 make run-hello-world-repl-container
 ```
-The container starts and the user is dropped into a REPL. The *greet-user* function is defined in the **hello-world/src/hello-world** package. Type **\*package\*** in the REPL to confirm that the current package is **hello-world/src/hello-world**. We can then run call the function (greet-user <name>), where <name> is the string argument to the function.
+The container starts and the user is dropped into a REPL. The *greet-user* function is defined in the **hello-world/src/hello-world** package. Type **\*package\*** in the REPL to confirm that the current package is **hello-world/src/hello-world**. We can then run call the function (greet-user <name>), where <name> is the string argument to the function. To exit the REPL (and hence exit the container), you can type (sb-ext:quit). 
 
 Please see the included **Dockerfile**, Makefile, and associated lisp and bash script files for details on how to bild the REPL-based image.
 
@@ -79,7 +79,7 @@ To run this container, type the following command:
 ```
 make run-hello-world-exe-container NAME=mary
 ```
-In the above **make** command, the variable NAME contains the argument that is passed to the **hello-world** executable. This is equivalent to falling the **greet-user** function as follows: (greet-user "mary"). The container runs, prints "Hello Mary!" and then exits. Note there, we do not enter a REPL as described earlier.
+In the above **make** command, the variable NAME contains the argument that is passed to the **hello-world** executable. This is equivalent to falling the **greet-user** function as follows: (greet-user "mary"). The container runs, prints "Hello Mary!" and then exits. Note here, we are not dropped into a REPL like the previous image. 
 
 Please see the included **Dockerfile-exe**, Makefile and associated lisp and bash scripts for this setup. 
 
