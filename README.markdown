@@ -52,7 +52,7 @@ make clone
 ```
 The above command will clone the **hello-world** repository into the current directory. We want to build Docker images for the hello-world project. (Note that we set the .gitignore file ignore the hello-world folder)
 
-After the cloning step above, we can proceed to build the two Docker images as described below.
+After cloning the repository, we can proceed to build the two Docker images as described below.
 
 ### Build REPL-based image:
 To build a REPL-based image, i.e., we drop into a repl when the container is run, issue the following command:
