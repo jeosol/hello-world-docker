@@ -79,7 +79,7 @@ To run this container, type the following command:
 ```
 make run-hello-world-exe-container NAME=mary
 ```
-In the above make command, the variable NAME contains the argument that is passed to the executable in the container. This is equivalent to calling (greet-user "mary"). Additionally, the container runs, prints "Hello Mary!" and then exits. Note there, we do not enter a repl as described earlier.
+In the above **make** command, the variable NAME contains the argument that is passed to the **hello-world** executable. This is equivalent to falling the **greet-user** function as follows: (greet-user "mary"). The container runs, prints "Hello Mary!" and then exits. Note there, we do not enter a REPL as described earlier.
 
 Please see the included **Dockerfile-exe**, Makefile and associated lisp and bash scripts for this setup. 
 
