@@ -55,7 +55,7 @@ The above command will clone the **hello-world** repository into the current dir
 After cloning the repository, we can proceed to build the two Docker images as described below.
 
 ### Building the REPL-based image:
-This image is built such that when we run the container, we are dropped into a Common Lisp REPL. The version of the image is build using the following command.
+This image is built such that when we run the container, we are dropped into a Common Lisp REPL. The REPL-based image is built using the following command:
 ```
 make hello-world-repl-image
 ```
