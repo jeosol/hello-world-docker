@@ -69,7 +69,7 @@ Please see the included **Dockerfile**, Makefile, and associated lisp and bash s
 
 ### Building the executable-based image:
 
-For the executable-based image, we will create an executable for the **hello-world project**. The image is built such that when we run the container, the **hello-world** executable is called with the argument passed to the executable.
+For the executable-based image, we will create an executable for the **hello-world project**. The image is built such that when we run the container, the **hello-world** executable is called with the argument passed to the executable in the container.
 
 To build this image, please type the following command at the console:
 ```
