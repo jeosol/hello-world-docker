@@ -54,8 +54,8 @@ The above command will clone the **hello-world** repository into the current dir
 
 After cloning the repository, we can proceed to build the two Docker images as described below.
 
-### Build REPL-based image:
-To build a REPL-based image, i.e., we drop into a repl when the container is run, issue the following command:
+### Building the REPL-based image:
+This image is built such that when we run the container, we are dropped into a Common Lisp REPL. The version of the image is build using the following command.
 ```
 make hello-world-repl-image
 ```
@@ -67,7 +67,7 @@ The container starts and the user is dropped into a REPL. The *greet-user* funct
 
 Please see the included **Dockerfile**, Makefile, and associated lisp and bash script files for details on how to bild the REPL-based image.
 
-### Build executable image:
+### Building the executable-based image:
 Here, we create an exectuable and setup the image to run the executable as the final command in the docker file (see Dockerfile-exe in the repository). To build the image, type the following command at the console:
 ```
 make hello-world-exe-image
