@@ -92,7 +92,7 @@ Then change to the **hello-world-docker** directory and issue one or both make c
 
 Please ensure that you have Docker installed and running on your local machine before executing the **make** commands.
 
-Please file an issue if you encounter problems creating the docker images.
+Please file an issue if you encounter problems creating the Docker images.
 
 ## Author
 
