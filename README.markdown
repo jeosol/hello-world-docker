@@ -84,11 +84,13 @@ In the above **make** command, the variable NAME contains the argument that is p
 Please see the included **Dockerfile-exe**, Makefile and associated lisp and bash scripts for this setup. 
 
 ## Installation
-To clone the repository to your local machine, enter the following command in a shell:
+To clone the **hello-world-docker** repository to your local machine, enter the following command in a shell:
 ```
 git clone https://github.com/jeosol/hello-world-docker.git
 ```
-Then change to the **hello-world-docker** directory and issue one or both make commands described above to build the repl- or executable-based images (see previous section). Please ensure that you have Docker installed and running on your local machine before executing the **make** commands.
+Then change to the **hello-world-docker** directory and issue one or both make commands described in the previous section to build the REPL- or executable-based Docker images.
+
+Please ensure that you have Docker installed and running on your local machine before executing the **make** commands.
 
 Please file an issue if you encounter problems creating the docker images.
 
