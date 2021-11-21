@@ -63,7 +63,7 @@ To run the container, type the following command at the console:
 ```
 make run-hello-world-repl-container
 ```
-The container starts and the user is dropped into a REPL. The *greet-user* function is defined in the hello-world/src/hello-world package. Type **\*package\*** in the REPL to confirm that the current package is hello-world/src/hello-world. We can then run call the function (greet-user <name>), where <name> is the string argument to the function.
+The container starts and the user is dropped into a REPL. The *greet-user* function is defined in the **hello-world/src/hello-world** package. Type **\*package\*** in the REPL to confirm that the current package is **hello-world/src/hello-world**. We can then run call the function (greet-user <name>), where <name> is the string argument to the function.
 
 Please see the included **Dockerfile**, Makefile, and associated lisp and bash script files for details on how to bild the REPL-based image.
 
